@@ -43,3 +43,26 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+document.getElementById("form").onsubmit = function () {
+  document.getElementById("load").style.display = "inline";
+};
+
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "godfreyenos360@gmail.com",
+    Password: "godfrey0713581041",
+    To: "enoshgodfrey360@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "New contact From Godfrey|Enosh Website",
+    Body:
+      "Name: " +
+      document.getElementById("name").value +
+      "<br> Email: " +
+      document.getElementById("email").value +
+      "<br> Message: " +
+      document.getElementById("message").value,
+  }).then((message) => alert("MESSAGE SENT SUCCESFULLY!"));
+}

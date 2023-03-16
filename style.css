@@ -469,7 +469,7 @@ section .button button:hover{
 
 .submit-btn {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin: 10px 0;
   outline: none;
   padding: 8px 16px;
@@ -636,5 +636,33 @@ footer .text span a:hover{
     width: 90%;
     align-items: center;
     margin: 0 1.3rem;
+  }
+}
+
+
+#load {
+  transition: 2s;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  position: absolute;
+  left: 110px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: grey solid 5px;
+  display: none;
+  outline: none;
+  border-top: lightskyblue 5px solid;
+  animation: loading infinite 0.6s;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

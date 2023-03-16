@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Godfrey|Enosh</title>
@@ -24,7 +24,7 @@
           <a href="index.html"><h6>Godfrey|Enosh</h6></a>
         </div>
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#services">Services</a></li>
@@ -34,10 +34,19 @@
           </div>
         </ul>
         <div class="media-icons">
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""
+            ><i class=""
+              ><img
+                src="https://icons8.com/icon/tvG-nQ3s2hZL/linkedin"
+                alt="" /></i
+          ></a>
           <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="@Godfrey_360"><i class="fab fa-twitter"></i></a>
-          <a href="@godfrey_codes"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/Godfrey_360"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/godfrey_codes/"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </div>
       <div class="menu-btn">
@@ -49,7 +58,7 @@
       <h2>Let's Chat &#128512;</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="" method="POST">
+          <form onsubmit="sendEmail(); reset(); return false;">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -76,8 +85,8 @@
               <label for="message">Message</label>
               <textarea
                 id="message"
-                cols="50"
-                rows="20"
+                cols="40"
+                rows="15"
                 placeholder="What Can I do For You"
                 name="message"
                 class="input-field"
@@ -90,6 +99,7 @@
               id="submit-btn"
               class="submit-btn"
             />
+            <span id="load"></span>
           </form>
         </div>
       </div>
@@ -97,10 +107,12 @@
     <footer>
       <div class="text">
         <span
-          ><a href="#">Godfrey|Enosh</a> | &#169; 2023 All Rights Reserved</span
+          ><a href="#">Godfrey|Enosh</a> | &#169; 2023 All Rights Reserved
+          <br />Tel: +255 656 484 894 | +255 689 737 839</span
         >
       </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
