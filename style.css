@@ -91,6 +91,10 @@ nav.sticky .media-icons a{
   margin-bottom: 0;
 
 }
+.logo image {
+  flex: 1;
+  display: flex;
+}
 
 
 
@@ -127,6 +131,9 @@ nav.sticky .menu-btn{
   background-position: center;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+}
+strong{
+  color: #4070f4;
 }
 
 .home-content {
@@ -269,7 +276,7 @@ section  .topic{
 section .button{
   margin: 16px 0;
 }
-section .button button{
+section .button button {
   outline: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -280,6 +287,15 @@ section .button button{
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
+  text-decoration: none;
+
+}
+button a {
+  color:#fff ;
+}
+
+button a:hover{
+   color: #4070f4;
 }
 section .button button:hover{
   border-color: #4070f4;
@@ -398,6 +414,80 @@ section .button button:hover{
   width: 80%;
   text-align: center;
   margin: auto;
+}
+
+
+/*Contact Form css*/
+
+.contact {
+  margin-top: 0;
+  padding-top: 10rem;
+  background-color: #fff;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0E2431;
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 10px;
+  box-shadow:  0px 2px 15px 2px #4070f4;
+  margin-bottom: 6rem;
+}
+
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: 300;
+  color: #0E2431;
+  font-family: inherit;
+}
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  border: 2px outset rgb(0, 0, 0);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 4rem;
+  color: #4070f4;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #fff;
+  color: #4070f4;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 8px;
+  border-color: #4070f4;
+}
+
+.submit-btn:hover {
+  background-color: #4070f4;
+  color: #fff;
+
 }
 
 /* Footer CSS */
@@ -540,5 +630,11 @@ footer .text span a:hover{
   .skills-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
+  }
+
+  .contact {
+    width: 90%;
+    align-items: center;
+    margin: 0 1.3rem;
   }
 }
